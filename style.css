@@ -85,3 +85,26 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  background: lightgray;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+/* .cell.X {
+  background: #f1c40f;
+}
+.cell.O {
+  background: #3498db;
+} */
